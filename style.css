@@ -2,7 +2,14 @@
     font-family: horror;
     src: url(./Another\ Danger\ -\ Demo.otf);
 }
-
+@font-face {
+    font-family: madina;
+    src: url(./Madina.otf);
+}
+@font-face {
+    font-family: anime;
+    src: url(./animeace2_bld.otf);
+}
 *{
     padding:0;
     margin:0;
@@ -14,41 +21,75 @@ html,body{
     width:100%;
 }
 
-#intro{
-    background-color:rgba(39, 1, 67, 0.98);
-    color:white;
-    text-align: center;
-    height:170px;
-    padding-top: 40px;
-    font-size: 20px;
-    font-family:cursive
-}
-h1{
-    text-transform: uppercase;
-
-}
-p{
-    font-size: medium;
-    padding-top: 10px;
-    font-style: italic;
-}
-
-#box1{
-    height:300px;
-    width:300px;
-    background: linear-gradient(to right bottom, violet,indigo,blue,green,yellow,orange,red);
-}
-#box2{
-    height:300px;
-    width:300px;
-    background: radial-gradient(rgb(135, 40, 40),indigo,blue,green,yellow,orange,violet);
-}
-#box3{
-    height:300px;
-    width:300px;
-    background: conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);
-}
-.about{
+#main{
+    height: 140%;
+    padding:20px;
+    width: 100%;
+    background-color: #13a5e4d3;
     display: flex;
-    gap:20px;
+    gap:35px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#card1{
+    height: 270px;
+    width: 200px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 15px 15px 10px rgba(29, 13, 13, 0.246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#card1:hover{
+     transform: scale(1.1);
+     transition: ease-in-out;
+}
+
+#card1 img{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+#card1 button{
+    height: 40px;
+    width:120px;
+    background-color: rgba(193, 15, 157, 0.721);
+    color: white;
+    border:2px solid rgba(193, 15, 157, 0.721);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#card1 button:hover{
+    background-color: transparent;
+    color:rgba(193, 15, 157, 0.721);
+}
+
+#card1 h2{
+    font-family: anime;
+    font-size: 15px;
+    
+}
+
+#nav{
+    height: 50px;
+    width:100%;
+    background-color: #ed22c8;
+    font-family: madina;
+}
+
+#nav h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    font-weight: 300;
 }
