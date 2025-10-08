@@ -1,0 +1,54 @@
+@font-face {
+    font-family: horror;
+    src: url(./Another\ Danger\ -\ Demo.otf);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+
+#intro{
+    background-color:rgba(39, 1, 67, 0.98);
+    color:white;
+    text-align: center;
+    height:170px;
+    padding-top: 40px;
+    font-size: 20px;
+    font-family:cursive
+}
+h1{
+    text-transform: uppercase;
+
+}
+p{
+    font-size: medium;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+#box1{
+    height:300px;
+    width:300px;
+    background: linear-gradient(to right bottom, violet,indigo,blue,green,yellow,orange,red);
+}
+#box2{
+    height:300px;
+    width:300px;
+    background: radial-gradient(rgb(135, 40, 40),indigo,blue,green,yellow,orange,violet);
+}
+#box3{
+    height:300px;
+    width:300px;
+    background: conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);
+}
+.about{
+    display: flex;
+    gap:20px;
+}
