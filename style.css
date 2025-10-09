@@ -10,6 +10,10 @@
     font-family: anime;
     src: url(./animeace2_bld.otf);
 }
+@font-face {
+    font-family: conso;
+    src: url(./CONSOLA.TTF);
+}
 *{
     padding:0;
     margin:0;
@@ -23,16 +27,15 @@ html,body{
 
 #main{
     height: 140%;
-    padding:20px;
+    padding:25px;
     width: 100%;
     background-color: #13a5e4d3;
     display: flex;
     gap:35px;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 
-#card1{
+.card1{
     height: 270px;
     width: 200px;
     background-color: white;
@@ -46,18 +49,28 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#card1:hover{
-     transform: scale(1.1);
-     transition: ease-in-out;
-}
-
-#card1 img{
+.card1 img{
     height: 100px;
     width:100px;
     border-radius: 50%;
+    transition: all ease-in-out;
 }
 
-#card1 button{
+.card1 img:hover{
+    height: 65%;
+    width:100%;
+    border-radius:0%;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+}
+
+.card1:hover{
+     transform: scale(1.1);
+     transition: ease-in-out 0.5s;
+}
+
+.card1 button{
     height: 40px;
     width:120px;
     background-color: rgba(193, 15, 157, 0.721);
@@ -69,15 +82,15 @@ html,body{
     font-weight: 500;
 }
 
-#card1 button:hover{
+.card1 button:hover{
     background-color: transparent;
     color:rgba(193, 15, 157, 0.721);
 }
 
-#card1 h2{
-    font-family: anime;
+.card1 h2{
+    /* font-family: anime; */
+    font-family: conso;
     font-size: 15px;
-    
 }
 
 #nav{
