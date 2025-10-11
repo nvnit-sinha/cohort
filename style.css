@@ -51,6 +51,17 @@ p{
     padding-left:90px;
     font-size: 30px;
     color:transparent;
-    -webkit-text-stroke: 0.4px white;   text border
+    -webkit-text-stroke: 0.4px white;  
+}
 
+.box img{
+    object-fit: cover;
+    height:100%;
+    width:100%;
+    object-position: center;
+}
+
+.box:nth-child(3) img{
+    object-fit: cover;
+    object-position: start;
 }
