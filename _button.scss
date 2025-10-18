@@ -1,0 +1,17 @@
+@mixin button-style($bg-color:blue, $txt-clr:white,$txt-sz:18px){
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: $bg-color;
+    color:$txt-clr;
+    border-radius: 8px;
+    cursor:pointer;
+    font-size: $txt-sz;
+    border: 2px solid $bg-color;
+    outline:none;
+    transition: all 0.5s ease;
+}
+
+@mixin hover-effect($bg-color:green){
+    background-color: transparent;
+    color:$bg-color;
+}

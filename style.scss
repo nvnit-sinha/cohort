@@ -1,0 +1,34 @@
+@import "button"; 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.blue{
+    @include button-style(blue,white,20px);
+}
+
+.red{
+    @include button-style(red,white,15px);
+}
+
+.green{
+    @include button-style(green,white,25px);
+}
+
+.blue:hover{
+    @include hover-effect(blue);
+}
+.red:hover{
+    @include hover-effect(red);
+}
+.green:hover{
+    @include hover-effect(green);
+}

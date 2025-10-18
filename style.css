@@ -1,90 +1,64 @@
-@font-face {
-    font-family: hell;
-    src: url(/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
-}
-
 * {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: hell;
-}
- 
-html,body{
-   height: 100%;
-   width:100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    display: grid;
-
-    grid-template-columns: 1fr 300px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    gap: 10px;
-    padding: 10px;
-
-    grid-template-areas: "left-top top-center top-right"
-                         "left-top center bottom-right"
-                         "left-bottom left-bottom bottom-right"
-    ;
-    overflow: hidden;
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-#left-top{
-    background-color: darkgreen;
-    grid-area: left-top;
-    background-image: url(https://i.pinimg.com/736x/6e/5d/f4/6e5df40857ebdf6449ec715d3b1b9cf1.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50px;
+.blue {
+  margin-top: 10px;
+  padding: 15px 30px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid blue;
+  outline: none;
+  transition: all 0.5s ease;
 }
 
-#left-bottom{
-    background-color: darkkhaki;
-    grid-area: left-bottom;
-    background-image: url(https://i.pinimg.com/1200x/e1/66/f4/e166f4504c904e9351bff5dc1be00719.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
+.red {
+  margin-top: 10px;
+  padding: 15px 30px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  border: 2px solid red;
+  outline: none;
+  transition: all 0.5s ease;
 }
 
-#bottom-right{
-    background-color: darkmagenta;
-    grid-area: bottom-right;
-    background-image: url(https://i.pinimg.com/736x/09/23/0c/09230c61f3287d91f01f8caced20d9c7.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
+.green {
+  margin-top: 10px;
+  padding: 15px 30px;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 25px;
+  border: 2px solid green;
+  outline: none;
+  transition: all 0.5s ease;
 }
 
-#center{
-    background-color: darkred;
-    grid-area: center;
-    background-image: url(https://i.pinimg.com/1200x/c8/09/47/c8094720d0c740d82988cb2e97810f09.jpg);
-    background-size: cover;
-    background-position: top;
-    border-radius: 30px;
+.blue:hover {
+  background-color: transparent;
+  color: blue;
 }
 
-#top-center{
-    background-color: darkseagreen;
-    grid-area: top-center;
-    background-image: url(https://i.pinimg.com/736x/0e/e4/17/0ee41794466e32e8b45e36bd40461e3c.jpg);
-    background-size: cover;
-    background-position: bottom;
-    border-radius: 30px;
-    
+.red:hover {
+  background-color: transparent;
+  color: red;
 }
 
-#top-right{
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
-    background-color: deeppink;
-    grid-area: top-right;
-    background-image: url(https://i.pinimg.com/1200x/38/b4/01/38b401f89bce7c3cdb99b34e8ba9edbe.jpg);
-}
+.green:hover {
+  background-color: transparent;
+  color: green;
+}/*# sourceMappingURL=style.css.map */
