@@ -9,56 +9,42 @@ html, body {
   width: 100%;
 }
 
-.blue {
-  margin-top: 10px;
-  padding: 15px 30px;
-  background-color: blue;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 20px;
-  border: 2px solid blue;
-  outline: none;
-  transition: all 0.5s ease;
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
-
-.red {
-  margin-top: 10px;
-  padding: 15px 30px;
-  background-color: red;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
-  border: 2px solid red;
-  outline: none;
-  transition: all 0.5s ease;
+main section {
+  height: 100%;
+  flex-grow: 1;
+  transition: all 0.7s linear;
+  border: 1px solid black;
 }
-
-.green {
-  margin-top: 10px;
-  padding: 15px 30px;
-  background-color: green;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 25px;
-  border: 2px solid green;
-  outline: none;
-  transition: all 0.5s ease;
+main section:hover {
+  flex-grow: 2;
 }
-
-.blue:hover {
-  background-color: transparent;
-  color: blue;
+main section:nth-child(1) {
+  background-image: url("https://i.pinimg.com/1200x/d7/86/73/d78673f82867c87b9ab2bf7515455ef7.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-.red:hover {
-  background-color: transparent;
-  color: red;
+main section:nth-child(2) {
+  background-image: url("https://i.pinimg.com/736x/82/6e/d6/826ed6bb894469f8f487166595cb0997.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-.green:hover {
-  background-color: transparent;
-  color: green;
+main section:nth-child(3) {
+  background-image: url("https://i.pinimg.com/736x/4c/38/71/4c38712bf6e2d6c5669ba1defa9742b4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main section:nth-child(4) {
+  background-image: url("https://i.pinimg.com/1200x/b6/84/19/b684197e735264e9bc219bbea63c1b43.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main section:nth-child(5) {
+  background-image: url("https://i.pinimg.com/736x/b7/2c/4e/b72c4e0f84ce192bb4c72c8644adf31b.jpg");
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
