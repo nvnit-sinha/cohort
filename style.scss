@@ -24,12 +24,16 @@ main{
     section{
         height: 100%;
         flex-grow: 1;
-        transition: all 0.7s linear;
-        border: 1px solid black;
+        transition: all 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        // border: 1px solid black;
     }
 
     section:hover{
         flex-grow: 2;
+        transform: scale(0.6);
+        border-radius: 50px;
+        border: none;
+
     }
     section:nth-child(1){
         @include image('https://i.pinimg.com/1200x/d7/86/73/d78673f82867c87b9ab2bf7515455ef7.jpg')
