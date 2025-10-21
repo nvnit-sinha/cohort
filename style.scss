@@ -32,7 +32,7 @@ main{
         flex-grow: 2;
         transform: scale(0.6);
         border-radius: 50px;
-        border: none;
+        // border: none;
 
     }
     section:nth-child(1){
@@ -51,4 +51,9 @@ main{
         @include image('https://i.pinimg.com/736x/b7/2c/4e/b72c4e0f84ce192bb4c72c8644adf31b.jpg')
     }
 
+}
+
+h1{
+    padding-left: 40px;
+    color:#5D2DE6;
 }

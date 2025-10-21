@@ -23,7 +23,6 @@ main section:hover {
   flex-grow: 2;
   transform: scale(0.6);
   border-radius: 50px;
-  border: none;
 }
 main section:nth-child(1) {
   background-image: url("https://i.pinimg.com/1200x/d7/86/73/d78673f82867c87b9ab2bf7515455ef7.jpg");
@@ -49,4 +48,9 @@ main section:nth-child(5) {
   background-image: url("https://i.pinimg.com/736x/b7/2c/4e/b72c4e0f84ce192bb4c72c8644adf31b.jpg");
   background-size: cover;
   background-position: center;
+}
+
+h1 {
+  padding-left: 40px;
+  color: #5D2DE6;
 }/*# sourceMappingURL=style.css.map */
