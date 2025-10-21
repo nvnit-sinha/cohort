@@ -21,8 +21,6 @@ main section {
 }
 main section:hover {
   flex-grow: 2;
-  transform: scale(0.6);
-  border-radius: 50px;
 }
 main section:nth-child(1) {
   background-image: url("https://i.pinimg.com/1200x/d7/86/73/d78673f82867c87b9ab2bf7515455ef7.jpg");
@@ -51,6 +49,9 @@ main section:nth-child(5) {
 }
 
 h1 {
-  padding-left: 40px;
-  color: #5D2DE6;
+  font-size: 1.5rem;
+  padding-left: 0.3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #514138;
 }/*# sourceMappingURL=style.css.map */

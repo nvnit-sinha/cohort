@@ -30,8 +30,8 @@ main{
 
     section:hover{
         flex-grow: 2;
-        transform: scale(0.6);
-        border-radius: 50px;
+        // transform: scale(0.6);
+        // border-radius: 50px;
         // border: none;
 
     }
@@ -42,7 +42,7 @@ main{
         @include image('https://i.pinimg.com/736x/82/6e/d6/826ed6bb894469f8f487166595cb0997.jpg')
     }
     section:nth-child(3){
-        @include image('https://i.pinimg.com/736x/4c/38/71/4c38712bf6e2d6c5669ba1defa9742b4.jpg')
+        @include image('https://i.pinimg.com/736x/4c/38/71/4c38712bf6e2d6c5669ba1defa9742b4.jpg');
     }
     section:nth-child(4){
         @include image('https://i.pinimg.com/1200x/b6/84/19/b684197e735264e9bc219bbea63c1b43.jpg')
@@ -54,6 +54,10 @@ main{
 }
 
 h1{
-    padding-left: 40px;
-    color:#5D2DE6;
+    font-size: 1.5rem;
+    padding-left: 0.3rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    // color:#5D2DE6;
+    color:#514138;
 }
