@@ -1,7 +1,20 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(/assets/Satoshi-Light.woff);
+}
+@font-face {
+  font-family: Chillax;
+  src: url(/assets/Chillax-Regular.woff);
+}
+@font-face {
+  font-family: Hell;
+  src: url(/assets/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
+}
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: hell;
 }
 
 html, body {
@@ -10,48 +23,67 @@ html, body {
 }
 
 main {
-  height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  background-color: #121212;
 }
 main section {
-  height: 100%;
-  flex-grow: 1;
-  transition: all 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  gap: 1rem;
 }
-main section:hover {
-  flex-grow: 2;
+main section .top {
+  width: 100%;
 }
-main section:nth-child(1) {
-  background-image: url("https://i.pinimg.com/1200x/d7/86/73/d78673f82867c87b9ab2bf7515455ef7.jpg");
-  background-size: cover;
-  background-position: center;
+main section .top img {
+  width: 100%;
+  border-radius: 0.5rem;
 }
-main section:nth-child(2) {
-  background-image: url("https://i.pinimg.com/736x/82/6e/d6/826ed6bb894469f8f487166595cb0997.jpg");
-  background-size: cover;
-  background-position: center;
+main section .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  gap: 3.5rem;
+  border-radius: 0.8rem;
+  background-color: #1E1E1E;
+  color: white;
 }
-main section:nth-child(3) {
-  background-image: url("https://i.pinimg.com/736x/4c/38/71/4c38712bf6e2d6c5669ba1defa9742b4.jpg");
-  background-size: cover;
-  background-position: center;
+main section .bottom .studio {
+  padding-top: 1rem;
 }
-main section:nth-child(4) {
-  background-image: url("https://i.pinimg.com/1200x/b6/84/19/b684197e735264e9bc219bbea63c1b43.jpg");
-  background-size: cover;
-  background-position: center;
+main section .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-main section:nth-child(5) {
-  background-image: url("https://i.pinimg.com/736x/b7/2c/4e/b72c4e0f84ce192bb4c72c8644adf31b.jpg");
-  background-size: cover;
-  background-position: center;
+main section .bottom .text h1 {
+  font-family: Chillax;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+main section .bottom .text p {
+  font-family: Satoshi;
+  line-height: 1.8rem;
+  opacity: 0.5;
+  font-size: 1.25rem;
+}
+main section .bottom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  opacity: 0.85;
+  font-family: system-ui;
 }
 
-h1 {
-  font-size: 1.5rem;
-  padding-left: 0.3rem;
-  font-weight: 200;
-  text-transform: uppercase;
-  color: #514138;
+@media (min-width: 600px) {
+  main section {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
