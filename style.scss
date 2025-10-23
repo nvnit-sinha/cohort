@@ -89,15 +89,44 @@ main{
                 font-family: system-ui;
             }
         }
+    }
+    }
 
+    .test{
+        width:100%;
+        @include flex-col();
+        .figures{
+            width:100%;
+            @include flex-col();
+            color:white;
+            gap:1rem;
+
+            .clients{
+                display: flex;
+                justify-content: space-around;
+
+            }
+            
+            .followers{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            p{
+                opacity: 0.5;
+            }
         }
-        
+
+
     }
 }
 
 @media(min-width:600px){
     main{
         section{
+            flex-direction: row;
+        }
+        .test{
             flex-direction: row;
         }
     }

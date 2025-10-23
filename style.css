@@ -81,9 +81,35 @@ main section .bottom .text button {
   opacity: 0.85;
   font-family: system-ui;
 }
+main .test {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .test .figures {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
+}
+main .test .figures .clients {
+  display: flex;
+  justify-content: space-around;
+}
+main .test .figures .followers {
+  display: flex;
+  justify-content: space-around;
+}
+main .test .figures p {
+  opacity: 0.5;
+}
 
 @media (min-width: 600px) {
   main section {
+    flex-direction: row;
+  }
+  main .test {
     flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
