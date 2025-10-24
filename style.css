@@ -111,5 +111,30 @@ main .test .figures p {
   }
   main .test {
     flex-direction: row;
+    font-weight: 100;
+  }
+  main .test .figures {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6.5rem;
+  }
+  main .test .figures .clients {
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+    gap: 5rem;
+  }
+  main .test .figures .clients h1 {
+    font-weight: 100;
+  }
+  main .test .figures .followers {
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+    gap: 5rem;
+  }
+  main .test .figures .followers h1 {
+    font-weight: 100;
   }
 }/*# sourceMappingURL=style.css.map */

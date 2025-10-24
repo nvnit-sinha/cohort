@@ -121,6 +121,12 @@ main{
     }
 }
 
+@mixin flex-row($ai:space-between){
+    flex-direction: row;
+    align-items: $ai;
+    justify-content:center;
+}
+
 @media(min-width:600px){
     main{
         section{
@@ -128,6 +134,28 @@ main{
         }
         .test{
             flex-direction: row;
+            font-weight: 100;
+            .figures{
+                @include flex-row(center);
+                gap:6.5rem;
+                .clients{
+                    @include flex-row();
+                    gap:5rem;
+
+                    h1{
+                        font-weight: 100;
+                    }
+                }
+                
+                .followers{
+                    @include flex-row();
+                    gap:5rem;
+
+                    h1{
+                        font-weight: 100;
+                    }
+                }
+            }
         }
     }
 }
