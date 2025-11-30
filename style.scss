@@ -1,161 +1,161 @@
-@font-face {
-    font-family: Satoshi;
-    src: url(/assets/Satoshi-Light.woff);
-}
+// @font-face {
+//     font-family: Satoshi;
+//     src: url(/assets/Satoshi-Light.woff);
+// }
 
-@font-face {
-    font-family: Chillax;
-    src: url(/assets/Chillax-Regular.woff);
-}
+// @font-face {
+//     font-family: Chillax;
+//     src: url(/assets/Chillax-Regular.woff);
+// }
 
-@font-face {
-    font-family: Hell;
-    src: url(/assets/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
-}
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: hell;
-}
+// @font-face {
+//     font-family: Hell;
+//     src: url(/assets/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
+// }
+// * {
+//     padding:0;
+//     margin:0;
+//     box-sizing: border-box;
+//     font-family: hell;
+// }
  
-html,body{
-   height: 100%;
-   width:100%;
-}
+// html,body{
+//    height: 100%;
+//    width:100%;
+// }
 
-@mixin flex-col{
-    display: flex;
-    flex-direction: column;
-}
+// @mixin flex-col{
+//     display: flex;
+//     flex-direction: column;
+// }
 
-main{
-    width:100%;
-    @include flex-col();
-    background-color: #121212;
+// main{
+//     width:100%;
+//     @include flex-col();
+//     background-color: #121212;
     
-    section{
-        width: 100%;
-        @include flex-col();
-        padding: 0.8rem;
-        gap:1rem;
+//     section{
+//         width: 100%;
+//         @include flex-col();
+//         padding: 0.8rem;
+//         gap:1rem;
 
-        .top{
-            width:100%;
+//         .top{
+//             width:100%;
 
-            img{
-                width: 100%;
-                border-radius: 0.5rem;
-            }
-        }
+//             img{
+//                 width: 100%;
+//                 border-radius: 0.5rem;
+//             }
+//         }
 
-        .bottom{
-            width:100%;
-            @include flex-col();
-            padding:1.75rem;
-            gap:3.5rem;
-            border-radius: 0.8rem;
-            background-color: #1E1E1E;
+//         .bottom{
+//             width:100%;
+//             @include flex-col();
+//             padding:1.75rem;
+//             gap:3.5rem;
+//             border-radius: 0.8rem;
+//             background-color: #1E1E1E;
             
-            color:white;
+//             color:white;
 
-            .studio{
-                padding-top: 1rem;
-            }
-            .text{
-                @include flex-col();
-                gap:1rem;
+//             .studio{
+//                 padding-top: 1rem;
+//             }
+//             .text{
+//                 @include flex-col();
+//                 gap:1rem;
             
-            h1{
-                font-family: Chillax;   
-                text-transform: uppercase;
-                font-weight: 100;
-            }
+//             h1{
+//                 font-family: Chillax;   
+//                 text-transform: uppercase;
+//                 font-weight: 100;
+//             }
 
-            p{
-                font-family: Satoshi;
-                line-height: 1.8rem;
-                opacity: 0.5;
-                font-size: 1.25rem;
-            }
+//             p{
+//                 font-family: Satoshi;
+//                 line-height: 1.8rem;
+//                 opacity: 0.5;
+//                 font-size: 1.25rem;
+//             }
 
-            button{
-                width: fit-content;
-                border: none;
-                outline: none;
-                background-color: transparent;
-                color:white;
-                opacity: 0.85;
-                font-family: system-ui;
-            }
-        }
-    }
-    }
+//             button{
+//                 width: fit-content;
+//                 border: none;
+//                 outline: none;
+//                 background-color: transparent;
+//                 color:white;
+//                 opacity: 0.85;
+//                 font-family: system-ui;
+//             }
+//         }
+//     }
+//     }
 
-    .test{
-        width:100%;
-        @include flex-col();
-        .figures{
-            width:100%;
-            @include flex-col();
-            color:white;
-            gap:1rem;
+//     .test{
+//         width:100%;
+//         @include flex-col();
+//         .figures{
+//             width:100%;
+//             @include flex-col();
+//             color:white;
+//             gap:1rem;
 
-            .clients{
-                display: flex;
-                justify-content: space-around;
+//             .clients{
+//                 display: flex;
+//                 justify-content: space-around;
 
-            }
+//                 h1{
+//                     font-weight: 200;
+//                 }
+
+//             }
             
-            .followers{
-                display: flex;
-                justify-content: space-around;
-            }
+//             .followers{
+//                 display: flex;
+//                 justify-content: space-around;
+//             }
 
-            p{
-                opacity: 0.5;
-            }
-        }
+//             p{
+//                 opacity: 0.5;
+//             }
+//         }
 
 
-    }
-}
+//     }
+// }
 
-@mixin flex-row($ai:space-between){
-    flex-direction: row;
-    align-items: $ai;
-    justify-content:center;
-}
+// @mixin flex-row($ai:space-between){
+//     flex-direction: row;
+//     align-items: $ai;
+//     justify-content:center;
+// }
 
-@media(min-width:600px){
-    main{
-        section{
-            flex-direction: row;
-        }
-        .test{
-            flex-direction: row;
-            font-weight: 100;
-            .figures{
-                @include flex-row(center);
-                gap:6.5rem;
-                .clients{
-                    @include flex-row();
-                    gap:5rem;
-
-                    h1{
-                        font-weight: 100;
-                    }
-                }
+// @media(min-width:600px){
+//     main{
+//         section{
+//             flex-direction: row;
+//         }
+//         .test{
+//             flex-direction: row;
+//             font-weight: 100;
+//             .figures{
+//                 @include flex-row(center);
+//                 gap:6.5rem;
+//                 .clients{
+//                     @include flex-row();
+//                     gap:5rem;
+//                 }
                 
-                .followers{
-                    @include flex-row();
-                    gap:5rem;
+//                 .followers{
+//                     @include flex-row();
+//                     gap:5rem;
 
-                    h1{
-                        font-weight: 100;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     h1{
+//                         font-weight: 100;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
