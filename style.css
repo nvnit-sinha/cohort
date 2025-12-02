@@ -25,7 +25,7 @@ main{
 }
 
 .keys{
-  margin-top: 240px;
+  margin-top: 100px;
   height: 280px;
   width: 50px;
   border:2px solid black;
@@ -34,14 +34,30 @@ main{
 
 .keys:hover{
   cursor: pointer;
+  background-color: rgba(232, 236, 239, 0.859);
 }
 
 h1{
+  display: inline-block;
   font-weight: 300;
   font-size: 50px;
-  margin-top:500px;
+  margin-top:150px;
   margin-left:500px;
-  /* padding:20px 20px; */
-  display: inline;
-  /* border: 2px solid red; */
+
+}
+
+@media (max-width:600px){
+  h1{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top:150px;
+    /* margin-bottom: 10px; */
+  }
+  .piano{
+    margin-top: 150px;
+  }
+  .keys{
+    height: 475px;
+  }
 }
