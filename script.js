@@ -111,7 +111,7 @@ const reels = [
   }
 ];
 
-let sum = ''
+let sum = '';
 reels.forEach((elem)=>{
     sum = sum + `<div class="reel">
                     <video autoplay loop muted src="${elem.video}"></video>
@@ -125,19 +125,19 @@ reels.forEach((elem)=>{
                     </div>
                     <div class="right">
                         <div class="like">
-                            <h4 class="like-icon">${elem.isliked?'<i style="color:red" class="ri-heart-fill"></i>':'<i class="ri-heart-line"></i>'}</h4>
+                            <h4 class="icon">${elem.isliked?'<i style="color:red" class="ri-heart-fill"></i>':'<i class="ri-heart-line"></i>'}</h4>
                             <h6>${elem.likecount}</h6>
                         </div>
                         <div class="comment">
-                            <h4 class="comment-icon"><i class="ri-chat-3-line"></i></h4>
+                            <h4 class="icon"><i class="ri-chat-3-line"></i></h4>
                             <h6>${elem.commentcount}</h6>
                         </div>
                         <div class="share">
-                            <h4 class="share-icon"><i class="ri-share-forward-line"></i></h4>
+                            <h4 class="icon"><i class="ri-share-forward-line"></i></h4>
                             <h6>${elem.sharecount}</h6>
                         </div>
                         <div class="menu">
-                            <h4 class="menu-icon"><i class="ri-more-2-line"></i></h4>
+                            <h4 class="icon"><i class="ri-more-2-line"></i></h4>
                         </div>
                     </div>
                 </div> `
@@ -145,3 +145,4 @@ reels.forEach((elem)=>{
 
 let allReels = document.querySelector(".all-reels");
 allReels.innerHTML = sum;
+

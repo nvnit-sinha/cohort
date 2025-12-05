@@ -57,7 +57,7 @@ section{
   object-fit: cover;
 }
 
-.reel .bottom{
+.bottom{
   padding: 30px 20px;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.02));
@@ -130,4 +130,47 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 600px) and (max-width:900px){
+  section{
+    width: 430px;
+  }
+
+  .bottom{
+    padding: 50px 40px;
+  }
+
+  .bottom>h3{
+    font-weight: 500;
+    font-size: 40px;
+}
+  .bottom .user img{
+  height: 50px;
+  width: 50px;
+}
+  .bottom .user h4{
+  font-size: 23px;
+  font-weight: 500;
+}
+  .bottom .user button{
+  padding: 2px 4px;
+  font-size: 23px;
+}
+  .right i{
+  font-size: 40px;
+  font-weight: 200;
+}
+  .reel{
+  margin-bottom: 50px;
+}
+
+  .right{
+    gap:20px;
+    right:3%;
+  }
+  .right h6{
+    font-size: 20px;
+  }
+
 }
