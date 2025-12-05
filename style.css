@@ -134,6 +134,7 @@ section{
 
 @media (min-width: 600px) and (max-width:900px){
   section{
+    height: 70%;
     width: 430px;
   }
 
@@ -162,7 +163,7 @@ section{
   font-weight: 200;
 }
   .reel{
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
   .right{
