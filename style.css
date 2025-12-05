@@ -18,7 +18,7 @@ main{
   height: 100%;
   width: 100%;
   padding: 20px;
-  background: linear-gradient(to right bottom,rgb(27, 27, 27),rgb(30, 29, 29),black);
+  /* background: linear-gradient(to right bottom,rgb(27, 27, 27),rgb(30, 29, 29),black); */
 }
 
 section{
