@@ -148,23 +148,23 @@ section{
 
   .bottom>h3{
     font-weight: 500;
-    font-size: 40px;
+    font-size: 20px;
 }
   .bottom .user img{
   height: 50px;
-  width: 50px;
+  width: 30px;
 }
   .bottom .user h4{
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 300;
 }
   .bottom .user button{
   padding: 2px 4px;
-  font-size: 23px;
+  font-size: 14px;
 }
   .right i{
-  font-size: 40px;
-  font-weight: 200;
+  font-size: 17px;
+  font-weight: 100;
 }
   .reel{
   margin-bottom: 70px;
@@ -175,7 +175,7 @@ section{
     right:3%;
   }
   .right h6{
-    font-size: 20px;
+    font-size: 13px;
   }
 
 }
