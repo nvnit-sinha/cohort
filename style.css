@@ -132,7 +132,11 @@ section{
   align-items: center;
 }
 
-@media (min-width: 600px) and (max-width:900px){
+.right>div h4,h6{
+  pointer-events: none;
+}
+
+@media (max-width:900px){
   section{
     height: 70%;
     width: 430px;
