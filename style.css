@@ -31,7 +31,6 @@ section{
 .all-reels{ 
   height: 100%;
   width: 100%;
-  /* overflow: auto; */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -136,6 +135,29 @@ section{
   pointer-events: none;
 }
 
+.mute{
+  background-color: #333;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+.mute i{
+  font-size: 20px;
+  color:white;
+}
+
+.mute:active{
+  scale: 0.95;
+}
+
 @media (max-width:900px){
   section{
     height: 70%;
@@ -176,6 +198,13 @@ section{
   }
   .right h6{
     font-size: 13px;
+  }
+  .mute{
+    height: 25px;
+    width: 25px;
+  }
+  .mute i{
+    font-size: 15px;
   }
 
 }

@@ -1,5 +1,6 @@
 const reels = [
   {
+    ismuted: true,    
     username: "john_doe",
     likecount: 1200,
     isliked: true,
@@ -11,6 +12,7 @@ const reels = [
     isfollowed: true
   },
   {
+    ismuted: true,
     username: "emily_arts",
     likecount: 5400,
     isliked: false,
@@ -22,6 +24,7 @@ const reels = [
     isfollowed: false
   },
   {
+    ismuted: true,
     username: "travel_with_mia",
     likecount: 9800,
     isliked: true,
@@ -33,6 +36,7 @@ const reels = [
     isfollowed: true
   },
   {
+    ismuted: true,
     username: "tech_guru",
     likecount: 2300,
     isliked: false,
@@ -44,6 +48,7 @@ const reels = [
     isfollowed: false
   },
   {
+    ismuted: true,
     username: "fit_with_anna",
     likecount: 7600,
     isliked: true,
@@ -55,6 +60,7 @@ const reels = [
     isfollowed: true
   },
   {
+    ismuted: true,
     username: "chef_mario",
     likecount: 4500,
     isliked: false,
@@ -66,6 +72,7 @@ const reels = [
     isfollowed: false
   },
   {
+    ismuted: true,
     username: "street_style",
     likecount: 8800,
     isliked: true,
@@ -77,6 +84,7 @@ const reels = [
     isfollowed: true
   },
   {
+    ismuted: true,
     username: "pet_corner",
     likecount: 15000,
     isliked: false,
@@ -88,6 +96,7 @@ const reels = [
     isfollowed: false
   },
   {
+    ismuted: true,
     username: "music_by_lily",
     likecount: 6700,
     isliked: true,
@@ -99,6 +108,7 @@ const reels = [
     isfollowed: true
   },
   {
+    ismuted: true,
     username: "carreviews",
     likecount: 4200,
     isliked: false,
@@ -111,25 +121,29 @@ const reels = [
   }
 ];
 
+let likeCnt = document.querySelector("#like-count");
 let allReels = document.querySelector(".all-reels");
 
 function addData(){
   let sum = '';
   reels.forEach((elem, idx)=>{
     sum = sum + `<div class="reel">
-                    <video autoplay loop muted src="${elem.video}"></video>
+                    <video autoplay loop ${!elem.ismuted?'':'muted'} src="${elem.video}"></video>
+                    <div class="mute" id=${idx}>
+                    ${elem.ismuted?'<i class="ri-volume-mute-fill"></i>':'<i class="ri-volume-up-line"></i>'}
+                    </div>
                     <div class="bottom">
                         <div class="user">
                             <img src="${elem.userprofile}" alt="">
                             <h4>${elem.username}</h4>
-                            <button id="followbtn">${elem.isfollowed?"Unfollow":"Follow"}</button>
+                            <button class="follow" id=${idx}>${elem.isfollowed?"Unfollow":"Follow"}</button>
                         </div>
                         <h3>${elem.caption}</h3>
                     </div>
                     <div class="right">
                         <div id=${idx} class="like">
                             <h4 class="like-icon icon">${elem.isliked?'<i style="color:red" class="ri-heart-fill"></i>':'<i class="ri-heart-line"></i>'}</h4>
-                            <h6>${elem.likecount}</h6>
+                            <h6 id="like-count">${elem.likecount}</h6>
                         </div>
                         <div class="comment">
                             <h4 class="icon comment-icon"><i class="ri-chat-3-line"></i></h4>
@@ -150,3 +164,35 @@ function addData(){
 }
 
 addData();
+
+allReels.addEventListener('click',(dets)=>{
+  if(dets.target.className == 'like'){
+    if(!reels[dets.target.id].isliked){
+      reels[dets.target.id].likecount++;
+      reels[dets.target.id].isliked = true;
+    }else{
+      reels[dets.target.id].likecount--;
+      reels[dets.target.id].isliked = false;
+    }
+    addData();
+  }
+  if(dets.target.className == 'follow'){
+    if(!reels[dets.target.id].isfollowed){
+      reels[dets.target.id].isfollowed = true;
+    }else{
+      reels[dets.target.id].isfollowed = false;
+    }
+    addData();
+  }
+
+  if(dets.target.className == 'mute'){
+    if(!reels[dets.target.id].ismuted){
+      reels[dets.target.id].ismuted = true;
+    }else{
+      reels[dets.target.id].ismuted = false;
+    }
+    addData();
+  }
+  
+})
+
